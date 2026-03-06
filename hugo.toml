@@ -25,11 +25,11 @@ SectionPagesMenu = "main"
   identifier = "tag"
   url = "/tags/"
 
-[[menu.main]]
-  name = "Archive"
-  weight = -100
-  identifier = "archive"
-  url = "/archive/"
+#[[menu.main]]
+#  name = "Archive"
+#  weight = -100
+#  identifier = "archive"
+#  url = "/archive/"
 
 [taxonomies]
   #archive = "archive"
