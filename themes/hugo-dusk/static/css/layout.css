@@ -6,7 +6,8 @@ body {
 
 .main {
   margin: auto;
-  max-width: 42em;
+  /*max-width: 42em;*/
+  max-width: 75%;;
 }
 
 .main .header-bar {
@@ -151,7 +152,7 @@ th, td {
 }
 
 .post .content{
-  padding: 1em;
+  padding: 5%;
 }
 
 .post .date {

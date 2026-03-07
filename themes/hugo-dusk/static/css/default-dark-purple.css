@@ -147,7 +147,7 @@ th { background: var(--main-bg-color); }
 .metadata .syndicate a {
   color: #dcddde;
 }
-
+ 
 .content-item {
   background: var(--secondary-bg-color);
   border: 1px solid var(--border-color);
