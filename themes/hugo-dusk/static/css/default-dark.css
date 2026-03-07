@@ -7,6 +7,7 @@
     --main-bg-color: #101010;
     --secondary-bg-color: #202020;
     --main-text: #ffffff;
+    --line-color: #ffffff;
     --main-sec: #65c0d7; /* main secondary color for the site */
     --code-quote-bg: #1D1F21; /* background color for quotes and code blocks */
     --copyright: #808080; /* copyright text color */
@@ -71,13 +72,22 @@ th { background: var(--main-bg-color); }
   color: var(--main-sec);
 }
 
-.post {
+/*.post {
   background: var(--secondary-bg-color);
   border-left: 1px solid var(--border-color);
   border-right: 1px solid var(--border-color);
   border-top: 1px solid var(--border-color);
   border-radius: 0.2em;
   box-shadow: 0 1px 2px 0 #000000, 0 2px 5px 0 #000000;
+}*/
+
+.post {
+  background: var(--main-bg-color);
+  /*border-left: 1px solid var(--border-color);
+  border-right: 1px solid var(--border-color);*/
+  border-top: 1px solid var(--line-color);
+  border-radius: 0.2em;
+  /*box-shadow: 0 1px 2px 0 #000000, 0 2px 5px 0 #000000;*/
 }
 
 .post .content h1{ color: var(--main-sec); }

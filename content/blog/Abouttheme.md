@@ -4,8 +4,8 @@ description: "First post to test how this works"
 tags:
   - testing
   - programing
-#date: "2026-05-03"
-#publishDate: "2026-05-03"
+date: "2026-03-05"
+publishDate: "2026-03-05"
 series:
   - blog desing
 #syndicate:

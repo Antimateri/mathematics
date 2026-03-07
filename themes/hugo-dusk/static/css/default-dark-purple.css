@@ -6,6 +6,7 @@
 :root {
     --main-bg-color: #101010;
     --secondary-bg-color: #202020;
+    --line-color: #ffffff;
     --main-text: #ffffff;
     --main-sec: #a029ab; /* main secondary color for the site */
     --code-quote-bg: #1D1F21; /* background color for quotes and code blocks */
@@ -72,12 +73,12 @@ th { background: var(--main-bg-color); }
 }
 
 .post {
-  background: var(--secondary-bg-color);
-  border-left: 1px solid var(--border-color);
-  border-right: 1px solid var(--border-color);
-  border-top: 1px solid var(--border-color);
+  background: var(--main-bg-color);
+  /*border-left: 1px solid var(--border-color);
+  border-right: 1px solid var(--border-color);*/
+  border-top: 1px solid var(--line-color);
   border-radius: 0.2em;
-  box-shadow: 0 1px 2px 0 #000000, 0 2px 5px 0 #000000;
+  /*box-shadow: 0 1px 2px 0 #000000, 0 2px 5px 0 #000000;*/
 }
 
 .post .content h1{ color: var(--main-sec); }
@@ -198,7 +199,7 @@ th { background: var(--main-bg-color); }
 .err-404 {
   border: 1px solid var(--border-color);
   border-radius: 0.2em;
-  background: var(--secondary-bg-color);
+  /*background: var(--secondary-bg-color);*/
   box-shadow: 0 1px 2px 0 #000000, 0 2px 5px 0 #000000;
 }
 
