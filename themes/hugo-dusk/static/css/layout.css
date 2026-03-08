@@ -156,8 +156,9 @@ th, td {
 }*/
 
 .post .post-header {
-  padding-left: 5%;
-};
+  padding-left: 1%;
+  padding-bottom: 0.5em;
+}
 
 .post .content{
   padding-left: 5%;

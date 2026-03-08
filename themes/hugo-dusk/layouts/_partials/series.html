@@ -3,7 +3,7 @@
   <div class="series">
     {{ range .Params.series }}
       <div class="series-name">
-        <a href="/series/{{ . | urlize }}">{{.}}</a>
+        <h3 href="/series/{{ . | urlize }}">{{.}}:</h3>
       </div>
     {{ end }}
   </div>

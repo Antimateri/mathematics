@@ -1,14 +1,6 @@
 <footer class="post-footer">
 
   <div class="post-footer-data">
-            {{ partial "tags.html" . }}
-    {{if .Params.prerequisites}}
-            {{ partial "prerequisites.html" . }}
-    {{ end }}
-    {{if or .Params.categories .Params.series}}
-            {{ partial "categories.html" . }}
-            {{ partial "series.html" . }}
-    {{end}}
     <hr>
     {{if .Params.syndicate}}
         <div class="syndicate"> Syndicated to: 

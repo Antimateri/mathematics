@@ -15,15 +15,21 @@ SectionPagesMenu = "main"
 
 [[menu.main]]
   name = "Blog"
-  weight = -120
+  weight = -130
   identifier = "blog"
   url = "/blog/"
 
 [[menu.main]]
   name = "Tags"
-  weight = -110
+  weight = -120
   identifier = "tag"
   url = "/tags/"
+
+[[menu.main]]
+  name = "Series"
+  weight = -110
+  identifier = "series"
+  url = "/series/"
 
 [[menu.main]]
   name = "Archive"
