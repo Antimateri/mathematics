@@ -1,15 +1,21 @@
 </br>
 <div class="post-header">
-    {{if .Params.prerequisites}}
-            {{ partial "prerequisites.html" . }}
-    {{ end }}
-    {{if or .Params.categories .Params.series}}
+     <div class="header-columns">
+      <div class="header-left">
+    {{ if or .Params.categories .Params.series }}
             {{ partial "categories.html" . }}
             {{ partial "series.html" . }}
-    {{end}}
-<h1 class="title"> {{ .Title }} </h1>
-    {{if .Params.Summary}}
-        <h5 class="subtitle"> {{ .Summary }} </h5>
     {{ end }}
-    {{ partial "tags.html" . }}
+        <h1 class="title"> {{ .Title }} </h1>
+        {{if .Params.Summary}}
+            <h5 class="subtitle"> {{ .Summary }} </h5>
+        {{ end }}
+        {{ partial "tags.html" . }}
+      </div>
+      <div class="header-right">
+        {{ if .Params.prerequisites }}
+          {{ partial "prerequisites.html" . }}
+        {{ end }}
+      </div>
+    </div>
 </div> 

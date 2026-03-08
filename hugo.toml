@@ -8,6 +8,10 @@ theme = ["hugo-dusk"]
 #themesDir = "../.."
 enableRobotsTXT = true
 
+[caches]
+  [caches.images]
+    dir = ':cacheDir/images'
+
 #googleAnalytics = ""
 disqusShortname = ""
 

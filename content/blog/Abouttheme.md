@@ -10,8 +10,10 @@ series:
   - blog desing
 prerequisites:
   - "/blog/helloWorld.md"
+  - "/blog/abouttheme.md"
 #syndicate:
 #  - "https://example.org"
+Summary: "An overview of the inner workings of the blog and how this knowledge was used to design the blog"
 audio: []
 videos: []
 images: []

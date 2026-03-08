@@ -147,6 +147,50 @@ th, td {
   flex-flow: row wrap;
 }
 
+/* ensure prerequisite list appears as a vertical stack on the right */
+.articleheader_data .prerequisites {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end; /* keep list flush right */
+}
+.articleheader_data .prerequisites ul {
+  margin: 0;
+  padding: 0 1em; /* indent markers a bit */
+  list-style: disc inside;
+}
+.articleheader_data .prerequisites .prerequisite {
+  margin: 0.2em 0;
+  /* ensure each list item is right-aligned by itself */
+  text-align: right;
+}
+
+/* header alignment helpers */
+.articleheader_data .header-left {
+  display: flex;
+  align-items: center;
+}
+/* header-right inside articleheader_data only used when metadata row present */
+.articleheader_data .header-right {
+  display: flex;
+  align-items: center;
+  margin-left: auto; /* push to right side */
+  text-align: right;
+}
+
+/* new column layout for title/subtitle/tags + prerequisites */
+.header-columns {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start; /* ensure columns align at top */
+}
+.header-columns .header-left {
+  flex: 1 1 auto;
+}
+.header-columns .header-right {
+  flex: 0 0 auto;
+  align-self: flex-start; /* push this column to the top */
+}
+
 /*.post .title {
   text-align: center;
 }

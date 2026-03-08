@@ -159,6 +159,20 @@ th { background: var(--main-bg-color); }
 .metadata .syndicate a {
   color: #dcddde;
 }
+
+.prerequisite-title {
+  font-weight: bold;
+  color: var(--main-sec);
+}
+
+/* box styling for prerequisites, similar to summary */
+.prerequisites {
+  border: 1px solid var(--border-color);
+  background-color: var(--secondary-bg-color);
+  padding: 0.5em;
+  border-radius: 0.2em;
+  margin: 0.5em 0;
+}
  
 .content-item {
   background: var(--secondary-bg-color);
