@@ -155,13 +155,13 @@ th, td {
   text-align: center;
 }*/
 
+.post .content{
+  padding-left: 5%;
+}
+
 .post .post-header {
   padding-left: 1%;
   padding-bottom: 0.5em;
-}
-
-.post .content{
-  padding-left: 5%;
 }
 
 .post .date {
@@ -551,7 +551,7 @@ th, td {
 }
 
 .metadata .series a {
-  text-decoration: underline;
+  text-decoration: none;
 }
 
 .metadata .syndicate a {
