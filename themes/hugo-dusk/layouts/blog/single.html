@@ -4,17 +4,16 @@
 
   {{ partial "postheader.html" . }}
 
-  {{/* insert table of contents sidebar when available */}}
+  {{/* insert table of contents at top when available */}}
   {{ if .TableOfContents }}
-    <div class="post-body-with-toc">
-      <div class="content">
-        {{ .Content }}
-      </div>
-      {{ .TableOfContents }}
+    <div class="toc-box prerequisites">
+      <details open>
+        <summary>Contents</summary>
+        {{ .TableOfContents }}
+      </details>
     </div>
-  {{ else }}
-    <div class="content"> {{ .Content }} </div>
   {{ end }}
+  <div class="content"> {{ .Content }} </div>
 
   {{ partial "postfooter.html" . }}
 </article>
