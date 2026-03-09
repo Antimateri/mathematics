@@ -203,6 +203,29 @@ th, td {
   padding-left: 5%;
 }
 
+/* table of contents column layout */
+.post-body-with-toc {
+  display: flex;
+}
+.post-body-with-toc .toc {
+  flex: 0 0 20%;
+  margin-left: 2em;
+  position: sticky;
+  top: 1em;
+  max-height: calc(100vh - 2em);
+  overflow-y: auto;
+}
+.post-body-with-toc .toc ol,
+.post-body-with-toc .toc ul {
+  list-style: inside;
+  padding-left: 0;
+}
+
+@media(max-width: 800px) {
+  .post-body-with-toc { flex-direction: column; }
+  .post-body-with-toc .toc { margin:0 0 1em 0; position: relative; width: 100%; }
+}
+
 .post .post-header {
   padding-left: 1%;
   padding-bottom: 0.5em;

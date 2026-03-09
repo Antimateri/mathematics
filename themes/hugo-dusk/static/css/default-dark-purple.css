@@ -72,7 +72,7 @@ code {
 }
 
 blockquote {
-  background: var(--main-bg-color);
+  background: var(--secondary-bg-color);
   border-left: 3px solid var(--main-sec);
 }
 

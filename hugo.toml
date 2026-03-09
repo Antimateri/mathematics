@@ -54,6 +54,10 @@ SectionPagesMenu = "main"
 [markup]
   [markup.highlight]
     style = "gruvbox"  # dark themes: monokai, api, fruity, native, rrt, swapoff ... https://xyproto.github.io/splash/docs/longer/all.html
+  [markup.goldmark.renderer]
+    unsafe = true
+  [markup.goldmark.extensions.math]
+    enable = true
 
 [params.author]
   name = "Antimateria"
