@@ -7,7 +7,7 @@
   {{/* insert table of contents at top when available */}}
   {{ if .TableOfContents }}
     <div class="toc-box prerequisites">
-      <details open>
+      <details closed>
         <summary>Contents</summary>
         {{ .TableOfContents }}
       </details>
@@ -17,7 +17,7 @@
 
   {{ if .Scratch.Get "mathdefs" }}
   <div class="toc-box prerequisites">
-    <details open>
+    <details closed>
       <summary>Index of Definitions</summary>
       <ul>
         {{ range .Scratch.Get "mathdefs" }}
@@ -29,7 +29,7 @@
     </details>
   </div>
   <div class="toc-box prerequisites">
-    <details open>
+    <details closed>
       <summary>Index of Results</summary>
       <ul>
         {{ range .Scratch.Get "mathdefs" }}

@@ -82,20 +82,20 @@ To start, lets get an intuition for what a finitely generated projective module 
 
 Actually, to have that $K_0(R) \cong \mathbb{Z}$ it is enough for $R$ to be a principal ideal domain. This follows from the structure theorem of finitely generated $R$-modules over principal ideal domains and the split property of finitely generated projective $R$-modules.
 
-{{< mathdef type="Lemma" name="K_0 of PID" >}}
+{{< mathdef type="Lemma" name="$K_0$ of PID" >}}
 Let $R$ be a principal ideal domain, then $K_0(R) \cong \mathbb{Z}$ with the isomorphism given by $[R^n] \mapsto n$.
 {{< /mathdef >}}
 
 This next lemma will be very usefull to calculate the projective class.
 
-{{< mathdef type="Lemma" name="K_0 of product rings" >}}
+{{< mathdef type="Lemma" name="$K_0$ of product rings" >}}
 Let $R_0$ and $R_1$ be rings, then for all $n\in \mathbb{Z}$
 $$K_0(R_0 \times R_1) \cong K_0(R_0) \oplus K_0(R_1)$$
 {{< /mathdef >}}
 
 From the last two lemmas we can build a simple example:
 
-{{< mathdef type="Example" name="K_0 of R ⊕ Z" >}}
+{{< mathdef type="Example" name="$K_0$ of $\mathbb{R}\oplus \mathbb{Z}$" >}}
 $K_0(\mathbb{R}\oplus \mathbb{Z}) \cong K_0(\mathbb{R}) \oplus K_0(\mathbb{Z}) \cong \mathbb{Z} \oplus \mathbb{Z}\cong \mathbb{Z}^2.$
 {{< /mathdef >}}
 
@@ -106,7 +106,7 @@ $$K_0(\mathbb{C}[\mathbb{Z}/p]) \cong K_0(\mathbb{C}) \oplus K_0(\mathbb{C}) \op
 
 We introduce now a couple of more concrete lemmas:
 
-{{< mathdef type="Theorem" name="Rim's theorem" >}}
+{{< mathdef type="Theorem" name="Rim" >}}
 Let $p$ be a prime number. then
 $$\begin{aligned}K_0(\mathbb{Z}[\mathbb{Z}/p]) &\cong K_0(\mathbb{Z}[e^{2\pi i / p}])\\
 1_{\mathbb{Z}/p} &\mapsto e^{2\pi i / p}\end{aligned}$$
@@ -126,25 +126,36 @@ It is clear then that for a finitely generated projective module $P$, $[P]\in\ti
 
 Usually $\tilde{K}_0(R)$ is harder to compute than $K_0(R)$. We will provide a couple of lemmas that may help with that.
 
-{{< mathdef type="Lemma" name="K_0(RG) for group rings" >}}
+{{< mathdef type="Lemma" name="$K_0(RG)$ for group rings" >}}
 Let $G$ be a group and $R$ be a commutative integral domain, then 
 $${K}_0(RG) \cong \tilde{K}_0(RG) \oplus \mathbb{Z}.$$
 {{< /mathdef >}}
 
-{{< mathdef type="Theorem" name="Finite abelian groups with vanishing \tilde{K_0}(ZG)" >}}
+{{< mathdef type="Theorem" name="Finite abelian groups with vanishing $\tilde{K_0}(\mathbb{Z}G)$" >}}
 Let $G$ be a finite **abelian** group, then $\tilde{K}_0(\mathbb{Z}G) = 0$ if and only if one of the following conditions is satisfied:
-- $G$ is cyclic of order $n$ for $1\leq n \leq 11$ or $n = 13,14,17, 19$;
-- $G$ is $\mathbb{Z}/2 \oplus \mathbb{Z}/2$;
+<ul>
+  <li> $G$ is cyclic of order $n$ for $1\leq n \leq 11$ or $n = 13,14,17, 19$;</li>
+  <li> $G$ is $\mathbb{Z}/2 \oplus \mathbb{Z}/2$;</li>
+</ul>
 {{< /mathdef >}}
 
-{{< mathdef type="Theorem" name="Finite non-abelian groups with vanishing \tilde{K_0}(ZG)" >}}
+{{< mathdef type="Theorem" name="Finite non-abelian groups with vanishing $\tilde{K_0}(\mathbb{Z}G)$" >}}
 Let $G$ be a finite **non-abelian** group, then $\tilde{K}_0(\mathbb{Z}G) = 0$ if and only if one of the following conditions is satisfied:
-- $G$ is $D_{2n}$ for $n \geq 3$.
-- $G$ is $A_4, A_5$ or $S_4$.
+<ul>
+  <li> $G$ is $D_{2n}$ for $n \geq 3$.</li>
+  <li> $G$ is $A_4, A_5$ or $S_4$.</li>
+</ul>
 {{< /mathdef >}}
 
 We can now make a few examples:
 
-{{< mathdef type="Example" name="K_0(Z[Z/2])" >}}
+{{< mathdef type="Example" name="$K_0(\mathbb{Z}[\mathbb{Z}/2])$" >}}
 $K_0(\mathbb{Z}[\mathbb{Z}/2]) \cong \tilde{K}_0(\mathbb{Z}[\mathbb{Z}/2]) \oplus \mathbb{Z} \cong \mathbb{Z}$ as $\mathbb{Z}/2$ is cyclic of order 2.
 {{< /mathdef >}}
+
+
+
+
+
+# References
+ - [Isomorphism Conjectures in K- and L-Theory](https://doi.org/10.1007/978-3-031-98976-6)
