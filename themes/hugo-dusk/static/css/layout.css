@@ -220,7 +220,7 @@ th, td {
   cursor: pointer;
   font-weight: bold;
   color: var(--main-sec);
-  margin-bottom: 0.5em;
+  margin-bottom: 0em;
 }
 .toc-box summary::-webkit-details-marker {
   display: none;
@@ -228,7 +228,22 @@ th, td {
 /* reuse prerequisite-title for heading text when not using details */
 .toc-box .prerequisite-title {
   display: block;
-  margin-bottom: 0.5em;
+  margin-bottom: 0em;
+}
+/* left-align TOC links */
+#TableOfContents {
+  text-align: left;
+}
+/* reduce spacing between TOC levels */
+#TableOfContents li {
+  margin: 0.1em 0;
+}
+#TableOfContents ul {
+  padding-left: 1em;
+  margin: 0;
+}
+#TableOfContents ul ul {
+  padding-left: 1.5em;
 }
 
 .post .post-header {

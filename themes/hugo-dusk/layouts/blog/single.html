@@ -15,6 +15,29 @@
   {{ end }}
   <div class="content"> {{ .Content }} </div>
 
+  {{ if .Scratch.Get "mathdefs" }}
+  <div class="toc-box prerequisites">
+    <details open>
+      <summary>Index of Definitions</summary>
+      <ul>
+        {{ range .Scratch.Get "mathdefs" }}
+        <li><a href="#{{ .id }}">{{ .type }} ({{ .name }})</a></li>
+        {{ end }}
+      </ul>
+    </details>
+  </div>
+  <div class="toc-box prerequisites">
+    <details open>
+      <summary>Index of Results</summary>
+      <ul>
+        {{ range .Scratch.Get "mathdefs" }}
+        <li><a href="#{{ .id }}">{{ .type }} ({{ .name }})</a></li>
+        {{ end }}
+      </ul>
+    </details>
+  </div>
+  {{ end }}
+
   {{ partial "postfooter.html" . }}
 </article>
 

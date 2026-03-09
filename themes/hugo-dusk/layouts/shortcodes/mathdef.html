@@ -1,0 +1,11 @@
+{{ $type := .Get "type" | default "Definition" }}
+{{ $name := .Get "name" | default "Unnamed" }}
+{{ $id := printf "%s-%s" $type $name | urlize }}
+{{ if not (.Page.Scratch.Get "mathdefs") }}{{ .Page.Scratch.Set "mathdefs" slice }}{{ end }}
+{{ .Page.Scratch.Add "mathdefs" (dict "type" $type "name" $name "id" $id) }}
+<blockquote id="{{ $id }}">
+    {{ if eq $type "Definition" }}
+  <p><strong>{{ $name }}.</strong></p>
+    {{ end }}
+  {{ .Inner }}
+</blockquote>
