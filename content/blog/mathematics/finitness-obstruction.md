@@ -49,9 +49,9 @@ Let $R$ be a ring. We say a $R$-chain complex $C_*$ is:
 {{< /mathdef >}}
 
 {{< mathdef type="Definition" name="Finite domination in CW-complexes" >}}
-Let $R$ be a ring. We say a $R$-chain complex $C_*$ is **finitely dominated** if there exists a finite free $R$-chain complex $D_*$ and chain maps $i_*: C_* \to D_*$ and $r_*: D_* \to C_*$ such that $r_* \circ i_*$ is chain homotopic to the identity on $C_*$.
+Let $R$ be a ring. We say a $R$-chain complex $C_*$ is <strong>finitely dominated</strong> if there exists a finite free $R$-chain complex $D_*$ and chain maps $i_*: C_* \to D_*$ and $r_*: D_* \to C_*$ such that $r_* \circ i_*$ is chain homotopic to the identity on $C_*$.
 
-In this case we say $(D_*, i_*, r_*)$ is a **finite domination** of $C_*$.
+In this case we say $(D_*, i_*, r_*)$ is a <strong>finite domination</strong> of $C_*$.
 {{< /mathdef >}}
 
 Let's start with a simple example of a finitely dominated chain complex that is not finite:
@@ -93,7 +93,7 @@ Let $C$ be a chain-complex. $C$ has a finite domination if and only if $C$ is ch
 Using this theorem we can finally define the finitness obstruction:
 
 {{< mathdef type="Definition" name="Finitness obstruction of a chain complex" >}}
-Let $C_*$ be a $R$-chain complex with a finite domination $(D_*, i_*, r_*)$ where $D_*$ is a finite projective $R$-chain complex. We define the **finitness obstruction** $o(C_*)$ as 
+Let $C_*$ be a $R$-chain complex with a finite domination $(D_*, i_*, r_*)$ where $D_*$ is a finite projective $R$-chain complex. We define the <strong>finitness obstruction</strong> $o(C_*)$ as 
 $$o(C_*) = \sum_{n} (-1)^n [D_n] \in K_0(R)$$
 where $[D_n]$ is the class of the projective module $D_n$ in the projective group $K_0(R)$.
 {{< /mathdef >}}
@@ -101,7 +101,7 @@ where $[D_n]$ is the class of the projective module $D_n$ in the projective grou
 One last, and more relevant, definition remains:
 
 {{< mathdef type="Definition" name="Reduced finiteness obstruction" >}}
-Let $C_*$ be a $R$-chain complex with a finite domination $(D_*, i_*, r_*)$ where $D_*$ is a finite projective $R$-chain complex. We define the **reduced finiteness obstruction** $\tilde{o}(C_*)$ as 
+Let $C_*$ be a $R$-chain complex with a finite domination $(D_*, i_*, r_*)$ where $D_*$ is a finite projective $R$-chain complex. We define the <strong>reduced finiteness obstruction</strong> $\tilde{o}(C_*)$ as 
 $$\tilde{o}(C_*) = \sum_{n} (-1)^n [D_n] \in \tilde{K_0}(R)$$
 where $[D_n]$ is the class of the projective module $D_n$ in the reduced projective group $\tilde{K_0}(R)$.
 {{< /mathdef >}}
@@ -149,9 +149,9 @@ With the prerequisites out of the way, we can now define the finitness obstructi
 We start by defining some basic concepts over CW-complexes:
 
 {{< mathdef type="Definition" name="Finite domination in CW-complexes" >}}
-A CW-complex $X$ is **finitely dominated** if there exists a finite CW-complex $Y$ and maps $i: X \to Y$ and $r: Y \to X$ such that $r \circ i$ is homotopic to the identity on $X$.
+A CW-complex $X$ is <strong>finitely dominated</strong> if there exists a finite CW-complex $Y$ and maps $i: X \to Y$ and $r: Y \to X$ such that $r \circ i$ is homotopic to the identity on $X$.
 
-In this case we say $(Y, i, r)$ is a **finite domination** of $X$.
+In this case we say $(Y, i, r)$ is a <strong>finite domination</strong> of $X$.
 {{< /mathdef >}}
 
 The objective of this post is to find out when the other direction in $i$ and $r$ could be possible, if $X$ is finitelly dominated by $(Y, i, r)$ then it only needs for $i\circ r$ to be homotopy equivalent to the identity in $Y$ for $X$ and $Y$ to be homotopy equivalent.
@@ -166,7 +166,7 @@ Consider the infinite-dimensional sphere $S^{\infty} = \bigcup_{n=0}^{\infty} S^
 
 We want to define the finitness obstruction of a topological space $X$ using the cellular chain complex of a CW-complex that is homotopy equivalent to $X$. 
 
-One naive approach to define such an obstruction would be to calculate it over $C_*(X)$. However we are interested on the homotopic properties of $X$ so we would like to work over a $\mathbb{Z}\pi_1(X)$-module. To archieve this we resort to $\tilde{X}$, the universal covering of $X$, whose cellular chain complex $C_*(\tilde{X})$ is a $\mathbb{Z}\pi_1(X)$-chain complex because $\pi_1(X)$ acts on $\tilde{X}$ by deck transformations.
+One naive approach to define such an obstruction would be to calculate it over $C_\*(X)$. However we are interested in the homotopic properties of $X$ so we would like to work over a $\mathbb{Z}\pi_1(X)$-chain complex (while $C_\*(X)$ is just a $\mathbb{Z}$-chain complex). To achieve this we resort to $\tilde{X}$, the universal covering of $X$, whose cellular chain complex $C_*(\tilde{X})$ is a $\mathbb{Z}\pi_1(X)$-chain complex because $\pi_1(X)$ acts on $\tilde{X}$ by deck transformations.
 
 > [!NOTE]
 > I would like to at some point go into more depth as to why we are using the covering space instead of the original.
@@ -177,12 +177,12 @@ Let $(Y, i, r)$ be a finite domination of $X$. We can build a covering $\overlin
 
 We then bring that covering back to $X$ by taking the pullback of $\overline{Y}$ along $i: X \to Y$ which gives us the covering $i^*\overline{Y}= \{(x, y) \in X \times \overline{Y} : i(x) = p(y)\}$ (Essentially the fiber product $X \times_Y \overline{Y}$). 
 
-The maps $i: X \to Y$ and $r: Y \to X$ can be lifted to $\mathbb{Z}\pi_1(X)$-chain maps $i_*: C_*(\tilde{X}) \to C_*(\overline{Y})$ and $r_*: C_*(\overline{Y}) \to C_*(\tilde{X})$ respectively because the pullback $i^*\overline{Y}$ is a covering of $X$ and $\tilde{X}$ is the universal covering of $X$, so there exists a unique lift of $i$ and $r$ to maps between the coverings. In particular $r_* \circ i_*$ is chain homotopic to the identity on $C_*(\tilde{X})$ and $(C_*(i^*\overline{Y}), i_*, r_*)$ is a finite domination of $C_*(\tilde{X})$.
+The maps $i: X \to Y$ and $r: Y \to X$ can be lifted to $\mathbb{Z}\pi_1(X)$-chain maps $i_\*: C_\*(\tilde{X}) \to C_\*(\overline{Y})$ and $r_\*: C_\*(\overline{Y}) \to C_\*(\tilde{X})$ respectively because the pullback $i^\*\overline{Y}$ is a covering of $X$ and $\tilde{X}$ is the universal covering of $X$, so there exists a unique lift of $i$ and $r$ to maps between the coverings. In particular $r_* \circ i_\*$ is chain homotopic to the identity on $C_\*(\tilde{X})$ and $(C_\*(i^\*\overline{Y}), i_\*, r_\*)$ is a finite domination of $C_*(\tilde{X})$.
 
 We can now define the finitness obstruction of $X$
 
 {{< mathdef type="Definition" name="Unreduced finiteness obstruction of a topological space" >}}
-Let $X$ be a finitely dominated connected CW-complex. We define the **unreduced finiteness obstruction** $o(X)$ as
+Let $X$ be a finitely dominated connected CW-complex. We define the <strong>unreduced finiteness obstruction</strong> $o(X)$ as
 $$o(X) = o(C_*(\tilde{X})) \in K_0(\mathbb{Z}\pi_1(X))$$
 where $o(C_*(\tilde{X}))$ is the finitness obstruction of the $\mathbb{Z}\pi_1(X)$-chain complex $C_*(\tilde{X})$.
 {{< /mathdef >}}
@@ -190,7 +190,7 @@ where $o(C_*(\tilde{X}))$ is the finitness obstruction of the $\mathbb{Z}\pi_1(X
 And similarly for the reduced finitness obstruction:
 
 {{< mathdef type="Definition" name="Finiteness obstruction of a topological space" >}}
-Let $X$ be a finitely dominated connected CW-complex. We define the **finiteness obstruction** $\tilde{o}(X)$ as
+Let $X$ be a finitely dominated connected CW-complex. We define the <strong>finiteness obstruction</strong> $\tilde{o}(X)$ as
 $$\tilde{o}(X) = \tilde{o}(C_*(\tilde{X})) \in \tilde{K}_0(\mathbb{Z}\pi_1(X))$$
 where $\tilde{o}(C_*(\tilde{X}))$ is the reduced finitness obstruction of the $\mathbb{Z}\pi_1(X)$-chain complex $C_*(\tilde{X})$.
 {{< /mathdef >}}
@@ -207,10 +207,10 @@ The power of the finitness obstruction is that it gives us a way to determine if
 
 {{< mathdef type="Theorem" name="Wall's finitness obstruction for topological spaces" >}}
 Let $X$ be a finitely dominated connected CW-complex. 
-\begin{enumerate}
-\item $X$ is homotopy equivalent to a finite CW-complex if and only if $\tilde{o}(X) = 0$.
-\item If a group $G$ is finitely presented, then every element of $K_0(\mathbb{Z}G)$ can be realized as the finitness obstruction of some finitely dominated 3-dimensional CW-complex with fundamental group $G$.
-\end{enumerate}
+<ol>
+<li> $X$ is homotopy equivalent to a finite CW-complex if and only if $\tilde{o}(X) = 0$. </li>
+<li> If a group $G$ is finitely presented, then every element of $K_0(\mathbb{Z}G)$ can be realized as the finitness obstruction of some finitely dominated 3-dimensional CW-complex with fundamental group $G$. </li>
+</ol>
 {{< /mathdef >}}
 
 The first part of the theorem is the main result in this post and explains our interest in exploring the projective groups of topological spaces. 
@@ -224,4 +224,6 @@ Obtaining the finitness obstruction of a chain complex is usually not a simple c
 {{< mathdef type="Example">}}
   Consider agin $S^\infty$, we know its fundamental group is $\pi_1(S^\infty)=0$ because it is contractible so $K_0(\mathbb{Z}\pi_1(S^\infty))=K_0(\mathbb{Z})$ and we know $\tilde{K}_0(\mathbb{Z})=0$ so the finitness obstruction is zero which implies $S^\infty$ is homotopy equivalent to a point.
 {{< /mathdef >}}
+
+<!--![image](/blog/page_001.webp)-->
 
