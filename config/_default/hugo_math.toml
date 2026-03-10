@@ -1,10 +1,11 @@
-baseurl = "public/math"
-publishdir = "public/gobli"
+baseurl = "https://antimateri.github.io/blog/math/"
+publishdir = "public/math"
 title = "Antimaterial Synergies"
 copyright = "Copyright (c) 2008 - 2014, all rights reserved."
 languageCode = "en-US"
 canonifyurls = true
 pagination.pagerSize = 8
+theme = ["hugo-dusk"]
 #themesDir = "../.."
 enableRobotsTXT = true
 
@@ -82,7 +83,7 @@ SectionPagesMenu = "main"
   #gitlab = "gitlab id"
   #twitter = "twitter id"
   #linkedin = "linkedin id"
-  theme_colors = "default-dark-purple"
+  theme_colors = "default-dark-white"
   enable_separate_main_page = true # enable a separate main page with author intro and recent posts instead of the list of posts
   generate_opengraph_image = false # enable opengraph image auto generation
 
