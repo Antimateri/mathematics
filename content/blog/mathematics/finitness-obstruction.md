@@ -222,8 +222,15 @@ The second part of the theorem is a realization result that shows that the finit
 Obtaining the finitness obstruction of a chain complex is usually not a simple computation, obtaining it from a topological space doesn't make it easier. In this case the easiest way to apply Wall's finitness obstruction is to use that the reduced projective group of the group ring of its fundamental class is trivial even if it's only a sufficient condition.
 
 {{< mathdef type="Example">}}
-  Consider agin $S^\infty$, we know its fundamental group is $\pi_1(S^\infty)=0$ because it is contractible so $K_0(\mathbb{Z}\pi_1(S^\infty))=K_0(\mathbb{Z})$ and we know $\tilde{K}_0(\mathbb{Z})=0$ so the finitness obstruction is zero which implies $S^\infty$ is homotopy equivalent to a point.
+  Consider again $S^\infty$, we know its fundamental group is $\pi_1(S^\infty)=0$ because it is contractible so $K_0(\mathbb{Z}\pi_1(S^\infty))=K_0(\mathbb{Z})$ and we know $\tilde{K}_0(\mathbb{Z})=0$ so the finitness obstruction is zero which implies $S^\infty$ is homotopy equivalent to a point.
 {{< /mathdef >}}
 
+There are also finitely dominated spaces that are not homotopy equivalent to a finite CW-complex
+
+{{< mathdef type="Example">}}
+Consider the group $\mathbb{Z}/12$. By the 
+<a href="/blog/lower-k-theory/lower-k-theory/#tildeK0FiniteAbelian" > Finite abelian groups with vanishing $\tilde{K_0}(\mathbb{Z}G)$ theorem </a> 
+we know $\tilde{K_0}(\mathbb{Z}[\mathbb{Z}/12])\neq 0$ and, by Wall's finitness obstruction, for any $e\neq 0\in \tilde{K_0}(\mathbb{Z}[\mathbb{Z}/12])$ there exists a finitely dominated topological space $X$ with fundamental group $\mathbb{Z}/12$ such that $\tilde{o}(X)=e\neq 0$ which implies $X$ is not homotopically equivalent to a finite CW-complex.
+{{< /mathdef >}}
 <!--![image](/blog/page_001.webp)-->
 
