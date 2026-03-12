@@ -22,7 +22,7 @@ SectionPagesMenu = "main"
   name = "Blog"
   weight = -130
   identifier = "blog"
-  url = "/"
+  url = "/blog/"
 
 [[menu.main]]
   name = "Tags"
