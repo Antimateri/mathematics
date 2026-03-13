@@ -49,10 +49,10 @@ SectionPagesMenu = "main"
   identifier = "all"
   url = "https://antimateri.github.io/"
 
-[[menu.main]]
+[[menu.other]]
   name = "Mathematics"
   weight = -100
-  identifier = "archive"
+  identifier = "mathematics"
   url = "https://antimateri.github.io/mathematics/"
 
 [taxonomies]
