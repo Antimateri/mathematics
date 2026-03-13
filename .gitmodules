@@ -1,0 +1,6 @@
+[submodule "themes/hugo-dusk"]
+	path = themes/hugo-dusk
+	url = git@github.com:Antimateri/custom-hugo-dusk.git
+[submodule "content/mainpage"]
+	path = content/mainpage
+	url = git@github.com:Antimateri/antimateri.github.io.git
