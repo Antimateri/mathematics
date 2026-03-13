@@ -6,7 +6,7 @@ languageCode = "en-US"
 canonifyurls = true
 pagination.pagerSize = 8
 theme = ["hugo-dusk"]
-contentDir = "content/mainpage/content/blog/mathematics"
+contentDir = "content/mainpage/content/posts/mathematics"
 #themesDir = "../.."
 enableRobotsTXT = true
 
@@ -22,8 +22,8 @@ SectionPagesMenu = "main"
 [[menu.main]]
   name = "Posts"
   weight = -130
-  identifier = "blog"
-  url = "/"
+  identifier = "posts"
+  url = "/posts/"
 
 [[menu.main]]
   name = "Tags"
