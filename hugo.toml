@@ -43,6 +43,12 @@ SectionPagesMenu = "main"
   identifier = "archive"
   url = "/archive/"
 
+  [[menu.main]]
+  name = "About"
+  weight = -90
+  identifier = "about"
+  url = "/.about.md"
+
 [[menu.other]]
   name = "Everything"
   weight = -130
